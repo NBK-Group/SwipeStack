@@ -243,7 +243,7 @@ class SwipeStackState extends State<SwipeStack> with SingleTickerProviderStateMi
             child: widget.children[index].builder(_currentItemPosition, _progress)
           ),
         ),
-        onPanStart: (DragStartDetails dragStartDetails) {
+        /*onPanStart: (DragStartDetails dragStartDetails) {
           RenderBox getBox = context.findRenderObject();
           var local = getBox.globalToLocal(dragStartDetails.globalPosition);
 
@@ -262,7 +262,7 @@ class SwipeStackState extends State<SwipeStack> with SingleTickerProviderStateMi
           _currentItemPosition = (_left.toInt() == 0) ? SwiperPosition.None : (_left < 0) ? SwiperPosition.Left : SwiperPosition.Right;
           setState(() {});
         },
-        onPanEnd: _onPandEnd
+        onPanEnd: _onPandEnd */
       ),
     );
 

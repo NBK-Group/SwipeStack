@@ -261,8 +261,8 @@ class SwipeStackState extends State<SwipeStack> with SingleTickerProviderStateMi
           _progress = (100 / _baseContainerConstraints.maxWidth) * _left.abs();
           _currentItemPosition = (_left.toInt() == 0) ? SwiperPosition.None : (_left < 0) ? SwiperPosition.Left : SwiperPosition.Right;
           setState(() {});
-        },
-        onPanEnd: _onPandEnd */
+        },*/
+        onPanEnd: _onPandEnd 
       ),
     );
 
